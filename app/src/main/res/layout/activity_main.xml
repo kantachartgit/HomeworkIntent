@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iamdeveloper.homeworkintent.MainActivity"
+    android:background="@drawable/bg1">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorControlHighlight"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rmutsvlogo"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="216dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/colorControlHighlight"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/password"
+        app:layout_constraintRight_toRightOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="216dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="36dp"
+        android:background="?attr/colorControlHighlight"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="216dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/colorControlHighlight"
+        android:ems="10"
+        android:hint="Tel."
+        android:inputType="phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/password"
+        app:layout_constraintRight_toRightOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="ลงทะเบียน"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="38dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/userlogo"
+        app:layout_constraintRight_toLeftOf="@+id/username"
+        android:layout_marginRight="8dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/passwordlogo"
+        app:layout_constraintRight_toLeftOf="@+id/password"
+        android:layout_marginRight="2dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/username"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/phonelogo"
+        app:layout_constraintRight_toLeftOf="@+id/phone"
+        android:layout_marginRight="8dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/phone"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@+id/phone"
+        tools:layout_editor_absoluteX="35dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
